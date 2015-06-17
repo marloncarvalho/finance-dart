@@ -1,0 +1,9 @@
+<form>
+    <div *ng-if="successMessage != null">{{successMessage}}</div>
+    <input #name>
+    <button type="button" (click)="add(name.value)">Adicionar</button>
+
+    <ul>
+        <li *ng-for="#category of categories">{{category.name}}</li>
+    </ul>
+</form>
