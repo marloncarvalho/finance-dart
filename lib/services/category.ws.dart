@@ -3,7 +3,7 @@ library finance.category.ws;
 import 'package:angular2/angular2.dart';
 import "dart:html";
 import 'dart:convert';
-import 'package:dart_finance/model/category.dart';
+import 'package:dart_finance/models/category.dart';
 
 @Injectable()
 class CategoryWS {

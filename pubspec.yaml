@@ -1,9 +1,4 @@
 name: dart_finance
-version: 1.0.0
 dependencies:
   angular2: 2.0.0-alpha.27
   browser: any
-  web_components: "0.10.1"
-transformers:
-- angular2:
-    entry_points: web/main.dart
