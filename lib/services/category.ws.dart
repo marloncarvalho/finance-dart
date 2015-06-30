@@ -13,7 +13,7 @@ class CategoryWS {
       List<Category> result = new List<Category>();
       var list =  JSON.decode(req.responseText);
       for(var i = 0; i < list.length; i++) {
-        result.add(new Category(list[i]['name']));
+        result.add(new Category(list[i]['id'], list[i]['name']));
       }
 
       return result;

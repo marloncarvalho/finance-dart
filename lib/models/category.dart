@@ -1,8 +1,9 @@
 library finance.category.model;
 
 class Category {
+  int id;
   String name;
 
-  Category(this.name);
+  Category(this.id, this.name);
 
 }

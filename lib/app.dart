@@ -1,27 +1,24 @@
 library finance;
 
-import 'package:dart_finance/components/category/category-edit.dart';
 import 'package:angular2/angular2.dart';
 import 'package:angular2/router.dart';
+import 'package:dart_finance/components/home.dart';
 
 @Component(selector: 'app')
 @View(
-    templateUrl: 'app.html',
+    template: '<router-outlet></router-outlet>',
     directives: const [RouterOutlet, RouterLink]
 )
-@RouteConfig(const [const {
-  'path': '/categories/create',
-  'component': CategoryEdit,
-  'as': 'categoryEdit'
+@RouteConfig(const [ const {
+  'path': 'home',
+  'component': Home,
+  'as': '/home'
 }])
 class AppComponent {
   Router router;
 
-  go() {
-    router.navigate('/categories/create');
-  }
-
   AppComponent(Router lRouter): router = lRouter {
+    router.navigate('/home');
   }
 
 }
