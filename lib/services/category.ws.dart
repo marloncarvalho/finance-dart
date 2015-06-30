@@ -9,7 +9,7 @@ import 'package:dart_finance/models/category.dart';
 class CategoryWS {
 
   List<Category> list() async {
-    return await HttpRequest.request("./categories.json").then((req) {
+    return await HttpRequest.request("./json/categories.json").then((req) {
       List<Category> result = new List<Category>();
       var list =  JSON.decode(req.responseText);
       for(var i = 0; i < list.length; i++) {
